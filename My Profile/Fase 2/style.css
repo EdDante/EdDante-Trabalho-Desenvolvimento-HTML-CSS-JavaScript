@@ -1,0 +1,160 @@
+body {
+    background-color: #f4f4f4;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #005073;
+    color: #ffffff;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.section-title {
+    text-align: center;
+    padding: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.fotos-title {
+    background-color: #71c7ec;
+}
+
+.info-title {
+    background-color: #71c7ec;
+}
+
+.contato-title {
+    background-color: #71c7ec;
+}
+
+.carousel {
+    text-align: center;
+    position: relative;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.carousel-image {
+    width: 100%;
+    border-radius: 10%;
+    display: none;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+.card {
+    width: 96%;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+}
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: #71c7ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    border-radius: 30px;
+}
+
+.containerOne:hover {
+    background-color: #71c7ec;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+
+.containerTwo:hover {
+    background-color: #71c7ec;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+
+.containerThree:hover {
+    background-color: #71c7ec;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+
+.containerFour:hover {
+    background-color: #71c7ec;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(0, 0, 0);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
